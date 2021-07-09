@@ -77,7 +77,7 @@ def get_table_download_link(df):
 
     val = to_excel(df)
     b64 = base64.b64encode(val)
-    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="extract.xlsx">Download File</a>'
+    return f'<a href="data:application/octet-stream;base64,{b64.decode()}" download="extract.xlsx">Download File </a>'
 
 
 def get_sex(n):
